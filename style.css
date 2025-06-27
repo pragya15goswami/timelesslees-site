@@ -1,0 +1,224 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background: #ff6600;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #e55b00;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 2rem;
+}
+
+.product {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.product {
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.product a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #ff6600;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.about {
+  padding: 2rem;
+  background: #fff;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+footer {
+  background: #111;
+  color: #aaa;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: #111;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: #ff6600;
+  border-radius: 5px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease-out both;
+}
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 1rem;
+  border-left: 3px solid #ff6600;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+
+
